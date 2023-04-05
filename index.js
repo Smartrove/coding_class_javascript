@@ -266,6 +266,7 @@
 
 // console.log(person);
 // console.log(person.age);
+// console.log(person["age"]);
 // console.log(person.firstName);
 // console.log(person.friends);
 
@@ -277,10 +278,10 @@
 //John is a 30years old student. John has 3 friends. John's best friend is Smith. John's hobbies are coding, music and reading.
 
 // console.log(
-//   `${person.firstName} is a ${person.age}years old ${person.job}. ${person.firstName} has ${person.friends.length} friends. ${person.firstName}'s best friend is ${person.friends[0]}. ${person.firstName}'s hobbies are ${person.hobbies}`
+//   `${person.firstName} is a ${person.age}years old ${person.job}. ${person.firstName} has ${person.friends.length} friends. ${person.firstName}'s best friend is ${person.friends[0]}. ${person.firstName}'s hobbies are ${person.hobbies}.`
 // );
 
-//object method
+// object method
 // const person = {
 //   firstName: "John",
 //   lastName: "Doe",
@@ -292,7 +293,9 @@
 //   job: "student",
 //   friends: ["Smith", "Steven", "Gary"],
 //   calcLoan: function () {
-//     return this.loan * this.interest;
+//     // console.log(this);
+//     return `${this.firstName} is a ${this.age}years old ${this.job}. ${this.firstName} has ${this.friends.length} friends. ${this.firstName}'s best friend is ${this.friends[0]}. ${this.firstName}'s hobbies are ${this.hobbies}.`;
+//     // );
 //   },
 // };
 
@@ -367,15 +370,15 @@
 
 //looping through an object
 
-const dailyMeals = {
-  swallow: "Pounded Yam",
-  grilled: "grilled Yam",
-  cooked: "cooked Yam",
-  fried: "Fried Rice",
-  dried: "Dried Rice",
-  baked: "Baked Rice",
-  chicken: "Chicken Rice",
-};
+// const dailyMeals = {
+//   swallow: "Pounded Yam",
+//   grilled: "grilled Yam",
+//   cooked: "cooked Yam",
+//   fried: "Fried Rice",
+//   dried: "Dried Rice",
+//   baked: "Baked Rice",
+//   chicken: "Chicken Rice",
+// };
 
 // //Using the for-of-loop
 
@@ -407,6 +410,97 @@ const dailyMeals = {
 // } // get the object keys
 
 //using the for-in-loop to get the values from an object
-for (food in dailyMeals) {
-  console.log(dailyMeals[food]);
-}
+// for (food in dailyMeals) {
+// //   console.log(dailyMeals[food]);
+// }
+
+//converting an object to string
+// const person = {
+//   name: "John",
+//   age: 30,
+//   city: "New York",
+// };
+
+// let myString = JSON.stringify(person);
+// console.log(typeof myString);
+
+//converts dates into strings
+// const person = {
+//   name: "John",
+//   today: new Date(),
+// };
+
+// let myString = JSON.stringify(person);
+// console.log(person);
+// console.log(myString);
+
+//converting function to string
+//stringify will not convert function to string
+// const person = {
+//   name: "John",
+//   age: function () {
+//     return 30;
+//   },
+// };
+
+//to fix the stringify loophole, convert function to string first before stringifying
+// person.age = person.age.toString();
+
+// let myString = JSON.stringify(person);
+// console.log(myString);
+
+//convert array in an object to a string
+// const arr = ["John", "Peter", "Sally", "Jane"];
+
+// let myString = JSON.stringify(arr);
+// console.log(myString);
+
+//using getter
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   language: "en",
+//   get lang() {
+//     return this.language;
+//   },
+// };
+
+// console.log(person.lang);
+
+//using setter
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   language: "",
+//   set lang(lang) {
+//     this.language = lang;
+//   },
+// };
+
+// // Set an object property using a setter:
+// person.lang = "en";
+// console.log(person.language);
+
+//difference between getter and function expression
+
+//using function
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   fullName: function () {
+//     return ` ${this.firstName} ${this.lastName}`;
+//   },
+// };
+
+// console.log(person.fullName());
+
+//using getter
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   get fullName() {
+//     return ` ${this.firstName} ${this.lastName}`;
+//   },
+// };
+
+// console.log(person.fullName);
