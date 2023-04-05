@@ -364,3 +364,49 @@
 // ];
 
 // console.table(dailyMeals);
+
+//looping through an object
+
+const dailyMeals = {
+  swallow: "Pounded Yam",
+  grilled: "grilled Yam",
+  cooked: "cooked Yam",
+  fried: "Fried Rice",
+  dried: "Dried Rice",
+  baked: "Baked Rice",
+  chicken: "Chicken Rice",
+};
+
+// //Using the for-of-loop
+
+// for (const key of Object.keys(dailyMeals)) {
+//   console.log(key);
+//   // console.log(dailyMeals[key]);
+// }
+
+//getting the values of the object
+
+// const values = Object.values(dailyMeals);
+
+// console.log(values);
+
+//using entries to get all the entries in an object
+
+// const entries = Object.entries(dailyMeals);
+
+// console.log(entries);
+
+//looping through all the entries
+// for (const entry of entries) {
+// //   console.log(entry);
+// }
+
+//using the for-in loop
+// for (food in dailyMeals) {
+//   console.log(food);
+// } // get the object keys
+
+//using the for-in-loop to get the values from an object
+for (food in dailyMeals) {
+  console.log(dailyMeals[food]);
+}
