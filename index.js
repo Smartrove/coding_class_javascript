@@ -104,19 +104,6 @@
 
 // getFiveMultiples();
 
-//4. using javascript function, write a program that returns the sum of all the numbers from 1 to 100;
-
-// function getSum() {
-//   var sum = 0;
-//   for (let i = 1; i <= 100; i++) {
-//     // console.log(i);
-//     sum += i;
-//     console.log(sum);
-//   }
-// }
-
-// getSum();
-
 // const fruits = ["apple", "orange", "lettuce", "pineapple"];
 
 // console.log(fruits.slice(1, 2));
@@ -267,3 +254,113 @@
 // console.log({ _loop });
 
 //Javascript object
+//using the javascript object literal syntax
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 30,
+//   hobbies: ["coding", "music", "reading"],
+//   job: "student",
+//   friends: ["Smith", "Steven", "Gary"],
+// };
+
+// console.log(person);
+// console.log(person.age);
+// console.log(person.firstName);
+// console.log(person.friends);
+
+// person.location = "Nigeria";
+// person["twitter"] = "http://twitter.com/person";
+// console.log(person);
+
+//use the variable above to output this statement
+//John is a 30years old student. John has 3 friends. John's best friend is Smith. John's hobbies are coding, music and reading.
+
+// console.log(
+//   `${person.firstName} is a ${person.age}years old ${person.job}. ${person.firstName} has ${person.friends.length} friends. ${person.firstName}'s best friend is ${person.friends[0]}. ${person.firstName}'s hobbies are ${person.hobbies}`
+// );
+
+//object method
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 30,
+//   loan: 50,
+//   interest: 0.1,
+//   hasMortgage: false,
+//   hobbies: ["coding", "music", "reading"],
+//   job: "student",
+//   friends: ["Smith", "Steven", "Gary"],
+//   calcLoan: function () {
+//     return this.loan * this.interest;
+//   },
+// };
+
+// console.log(person.calcLoan());
+
+//write this statement using the function expression in the object.
+//John at age 30 is owning $50 loan and as well has no mortgage.
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 30,
+//   loan: 50,
+//   interest: 0.1,
+//   hasMortgage: false,
+//   hobbies: ["coding", "music", "reading"],
+//   job: "student",
+//   friends: ["Smith", "Steven", "Gary"],
+//   calcLoan: function () {
+//     return `${this.firstName} at age ${this.age} is owing $${
+//       this.loan
+//     } and as well as has ${this.hasMortgage ? "a" : "no"} mortgage`;
+//   },
+// };
+
+// console.log(person.calcLoan());
+
+//Exercise
+//1. using javascript function, write a program that returns the sum of all the numbers from 1 to 100;
+
+// function getSum() {
+//   var sum = 0;
+//   for (let i = 1; i <= 100; i++) {
+//     // console.log(i);
+//     sum += i;
+//   }
+//   console.log(sum);
+// }
+
+// getSum();
+
+//2. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+//Test Data: 'the quick brown fox jumped over the lazy dog'
+
+// function getUpperCase() {
+//   const str = "the quick brown big fox jumped over the lazy dog";
+//   var upperCase = str.split(" ");
+//   //   console.log(upperCase);
+//   const _upperCase = [];
+//   for (let i = 0; i < upperCase.length; i++) {
+//     // console.log(upperCase[i]);
+
+//     const _strCharacter = upperCase[i].charAt(0).toUpperCase();
+//     // console.log(_strCharacter);
+
+//     const _firstChar = _strCharacter + upperCase[i].slice(1);
+//     _upperCase.push(_firstChar);
+//   }
+//   return _upperCase.join(" ");
+// }
+// const result = getUpperCase();
+// console.log(result);
+
+//displaying output as table in the console.
+// const dailyMeals = [
+//   { id: 1, name: "eba", stew: "ila" },
+//   { id: 2, name: "semo", stew: "ewedu" },
+//   { id: 3, name: "pounded-yam", stew: "vegetable" },
+// ];
+
+// console.table(dailyMeals);
