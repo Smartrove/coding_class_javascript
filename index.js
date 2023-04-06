@@ -342,6 +342,8 @@
 
 // function getUpperCase() {
 //   const str = "the quick brown big fox jumped over the lazy dog";
+
+//   //convert string to an array
 //   var upperCase = str.split(" ");
 //   //   console.log(upperCase);
 //   const _upperCase = [];
@@ -379,14 +381,15 @@
 //   baked: "Baked Rice",
 //   chicken: "Chicken Rice",
 // };
-
+// console.log(dailyMeals);
 // //Using the for-of-loop
 
 // for (const key of Object.keys(dailyMeals)) {
-//   console.log(key);
-//   // console.log(dailyMeals[key]);
+//   const result = key;
+//   //   console.log(result);
+//   //   console.log(key);
+//   //   console.log(dailyMeals[key]);
 // }
-
 //getting the values of the object
 
 // const values = Object.values(dailyMeals);
@@ -401,12 +404,13 @@
 
 //looping through all the entries
 // for (const entry of entries) {
-// //   console.log(entry);
+//   //   console.log(entry);
 // }
 
 //using the for-in loop
 // for (food in dailyMeals) {
 //   console.log(food);
+//   console.log(dailyMeals[food]);
 // } // get the object keys
 
 //using the for-in-loop to get the values from an object
@@ -424,6 +428,11 @@
 // let myString = JSON.stringify(person);
 // console.log(typeof myString);
 
+// const date = new Date();
+// console.log(date);
+// const year = date.getFullYear();
+// console.log(year);
+
 //converts dates into strings
 // const person = {
 //   name: "John",
@@ -431,7 +440,7 @@
 // };
 
 // let myString = JSON.stringify(person);
-// console.log(person);
+// // console.log(person);
 // console.log(myString);
 
 //converting function to string
@@ -473,13 +482,13 @@
 //   lastName: "Doe",
 //   language: "",
 //   set lang(lang) {
-//     this.language = lang;
+//     this.firstName = lang;
 //   },
 // };
 
-// // Set an object property using a setter:
-// person.lang = "en";
-// console.log(person.language);
+// // // Set an object property using a setter:
+// person.lang = "James";
+// console.log(person.firstName);
 
 //difference between getter and function expression
 
