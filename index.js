@@ -513,3 +513,163 @@
 // };
 
 // console.log(person.fullName);
+
+//Javascript class
+// class Polygon {
+//   constructor(name) {
+//     this.name = "Shola";
+//   }
+// }
+
+// //to make instance of Polygon
+// const poly1 = new Polygon();
+
+// console.log(poly1.name); // Expected output: "Shola"
+
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+// }
+
+// const myCar1 = new Car("Ford", 2014);
+// const myCar2 = new Car("Audi", 2019);
+// const myCar3 = new Car("Lexus", 2018);
+// const myCar4 = new Car("Camry", 2016);
+
+// console.log(myCar1);
+// console.log(myCar2);
+// console.log(myCar3);
+// console.log(myCar4);
+
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   introduce() {
+//     console.log(`Hello, my name is ${this.name}.`);
+//   }
+// }
+
+// const firstName = new Person("Zayd");
+
+// firstName.introduce(); // Hello, my name is Zayd
+
+// class Car {
+//   constructor(name, year) {
+//     this.name = name;
+//     this.year = year;
+//   }
+//   age() {
+//     const date = new Date();
+//     const getYear = date.getFullYear() - this.year;
+//     return getYear;
+//   }
+// }
+// const myCar = new Car("Ford", 2014);
+// console.log(`My Car is ${myCar.age()} years old.`);
+// myCar.age();
+
+//class inheritance
+// class Car {
+//   constructor(brand) {
+//     this.brand = brand;
+//   }
+//   present() {
+//     return `I have a ${this.brand}`;
+//   }
+// }
+
+// class Model extends Car {
+//   constructor(brand, model) {
+//     super(brand);
+//     this.model = model;
+//   }
+//   show() {
+//     return `${this.present()}, it is a  ${this.model} model.`;
+//   }
+// }
+
+// let myCar = new Model("Ford", 2016);
+// console.log(myCar.show());
+
+//javascript DOM
+
+let value;
+
+//to get the document properties
+value = document;
+
+//accessing the document collection in array
+value = document.all;
+value = document.all[1];
+value = document.all[2];
+value = document.all[3];
+
+//getting the length all the elements in the collection
+value = document.all.length;
+
+//accessing the head only
+value = document.head;
+
+//accessing the body only
+
+value = document.body;
+
+//get the domain
+value = document.domain;
+
+//get the url
+value = document.URL;
+
+//getting the document elements one by one
+value = document.forms;
+value = document.forms[0];
+value = document.forms[0].action;
+value = document.forms[0].method;
+value = document.links;
+
+//get attribute
+
+value = document.scripts;
+value = document.scripts[0].getAttribute("src");
+// console.log(value);
+
+//DOM Selectors
+//using document.getElementById
+
+let form = document.getElementById("form");
+
+//get things from the element
+
+form = document.getElementById("form").id;
+form = document.getElementById("form").className;
+
+//change styling
+
+form = document.getElementById("form").style.backgroundColor = "red";
+// form = document.getElementById("form").style.color = "blue";
+// form = document.getElementById("form").style.border = "1px solid black";
+// form = document.getElementById("form").style.borderRadius = "15px";
+// form = document.getElementById("form").style.padding = "10px";
+// form = document.getElementById("form").style.margin = "10px";
+// form = document.getElementById("form").style.display = "none";
+
+//change text content
+// form = document.getElementById("name").textContent = "Contact Name:";
+// form = document.getElementById("name").innerText = "Your Name:";
+// form =
+//   document.getElementById("name").innerHTML =
+//   "<span style='background-color:'#111111''>Hello there!</span>";
+
+//using querySelector
+// form =
+// document.querySelector("label").textContent =
+//   "Contact Name:";
+// form = document.querySelector("#name").innerText = "Your Name:";
+// form = document.querySelector(".email-input").innerHTML =
+//   "<span style='background-color:'#111111''>Your Email!</span>";
+
+console.log(form);
