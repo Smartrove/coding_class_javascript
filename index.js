@@ -572,7 +572,7 @@
 // console.log(`My Car is ${myCar.age()} years old.`);
 // myCar.age();
 
-//class inheritance
+// //class inheritance
 // class Car {
 //   constructor(brand) {
 //     this.brand = brand;
@@ -600,76 +600,141 @@
 let value;
 
 //to get the document properties
-value = document;
+// value = document;
 
-//accessing the document collection in array
-value = document.all;
-value = document.all[1];
-value = document.all[2];
-value = document.all[3];
+// //accessing the document collection in array
+// value = document.all;
+// value = document.all[1];
+// value = document.all[2];
+// value = document.all[3];
 
-//getting the length all the elements in the collection
-value = document.all.length;
+// //getting the length all the elements in the collection
+// value = document.all.length;
 
-//accessing the head only
-value = document.head;
+// //accessing the head only
+// value = document.head;
 
-//accessing the body only
+// //accessing the body only
 
-value = document.body;
+// value = document.body;
 
-//get the domain
-value = document.domain;
+// //get the domain
+// value = document.domain;
 
-//get the url
-value = document.URL;
+// //get the url
+// value = document.URL;
 
-//getting the document elements one by one
-value = document.forms;
-value = document.forms[0];
-value = document.forms[0].action;
-value = document.forms[0].method;
-value = document.links;
+// //getting the document elements one by one
+// value = document.forms;
+// value = document.forms[0];
+// value = document.forms[0].action;
+// value = document.forms[0].method;
+// value = document.links;
 
-//get attribute
+// //get attribute
 
-value = document.scripts;
-value = document.scripts[0].getAttribute("src");
-// console.log(value);
+// value = document.scripts;
+// value = document.scripts[0].getAttribute("src");
+// // console.log(value);
 
-//DOM Selectors
-//using document.getElementById
+// //DOM Selectors
+// //using document.getElementById
 
-let form = document.getElementById("form");
+// let form = document.getElementById("form");
 
-//get things from the element
+// //get things from the element
 
-form = document.getElementById("form").id;
-form = document.getElementById("form").className;
+// form = document.getElementById("form").id;
+// form = document.getElementById("form").className;
 
-//change styling
+// //change styling
 
-form = document.getElementById("form").style.backgroundColor = "red";
+// form = document.getElementById("form").style.backgroundColor = "#ccc";
+// form = document.getElementById("form").style.padding = "30px";
+// const liId = document.getElementById("orange");
+// console.log(liId);
 // form = document.getElementById("form").style.color = "blue";
 // form = document.getElementById("form").style.border = "1px solid black";
 // form = document.getElementById("form").style.borderRadius = "15px";
-// form = document.getElementById("form").style.padding = "10px";
+// // form = document.getElementById("form").style.padding = "10px";
 // form = document.getElementById("form").style.margin = "10px";
 // form = document.getElementById("form").style.display = "none";
 
-//change text content
+// // change text content
 // form = document.getElementById("name").textContent = "Contact Name:";
 // form = document.getElementById("name").innerText = "Your Name:";
-// form =
-//   document.getElementById("name").innerHTML =
-//   "<span style='background-color:'#111111''>Hello there!</span>";
+// form = document.getElementById("name").innerHTML = "<span>Hello there!</span>";
 
-//using querySelector
-// form =
-// document.querySelector("label").textContent =
-//   "Contact Name:";
+// // using querySelector
+// form = document.querySelector("label").textContent = "Contact Name:";
 // form = document.querySelector("#name").innerText = "Your Name:";
 // form = document.querySelector(".email-input").innerHTML =
 //   "<span style='background-color:'#111111''>Your Email!</span>";
 
-console.log(form);
+// // using multiple selector
+// // by using getElementByClassName
+
+// form = document.getElementsByClassName("email-input");
+
+// // using getElementByTagName
+// form = document.getElementsByTagName("input")[0].style.padding = "10px";
+// form = document.getElementsByTagName("input")[0].style.width = "60%";
+
+// form = document.querySelectorAll("label");
+// form = document.querySelectorAll("#name");
+// form = document.querySelectorAll(".email-input");
+
+// const items = document.querySelectorAll("li");
+// console.log(items);
+
+// items.forEach((item, index) => {
+//   item.textContent = `${index}: Hello World`;
+// });
+// const itemsOdd = document.querySelectorAll("li:nth-child(odd)");
+// const itemsEven = document.querySelectorAll("li:nth-child(even)");
+
+// itemsOdd.forEach((item) => {
+//   //   item.style.backgroundColor = "#ccc";
+// });
+// itemsEven.forEach((item) => {
+//   item.style.backgroundColor = "black";
+//   item.style.color = "white";
+// });
+
+// // console.log(form);
+
+//javascript events
+
+const button = document.querySelector("#button");
+const emailInput = document.querySelector(".email-input");
+const formContainer = document.querySelector(".form-container");
+const login = document.querySelector("#login");
+
+emailInput.addEventListener("keydown", emailChange);
+
+function emailChange(e) {
+  console.log(e.target.value);
+}
+
+button.addEventListener("click", (e) => {
+  e.preventDefault();
+  let value = e;
+  console.log(value);
+  // console.log("Hello World!");
+  // alert("Welcome back");
+  emailInput.style.backgroundColor = "red";
+  formContainer.style.backgroundColor = "brown";
+});
+button.addEventListener("mouseover", (e) => {
+  e.preventDefault();
+  // console.log("Hello World!");
+  // alert("Welcome back");
+  // emailInput.style.backgroundColor = "red";
+  // formContainer.style.backgroundColor = "brown";
+
+  // formContainer.innerHTML = "<h1>Register</h1>";
+  login.innerHTML = "<h1>Login</h1>";
+  login.style.display = "block";
+  login.style.fontSize = "15px";
+  login.style.color = "blueviolet";
+});
