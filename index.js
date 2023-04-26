@@ -1,3 +1,100 @@
+//operators
+//arithmetic operators, assignment operators, conditional operators, logical operators,comparison operators.
+
+//arithmetic operators
+// const a = 5;
+// const b = 6;
+// const c = a + b;
+// const c = a * b;
+// const c = a / b;
+// console.log(c);
+
+//concatenation
+// const firstName = "Shola";
+// const lastName = "Bayo";
+// console.log(firstName + lastName);
+// console.log(firstName + " " + lastName);
+
+//assignment operators
+let y = 5;
+y += 10; // y = y + 10;
+// console.log(y);
+
+y *= 10; // y = y * 10;
+// console.log(y);
+
+y -= 10; // y = y - 10;
+// console.log(y);
+
+y++; // y = y + 1;
+// console.log(y);
+
+y--; // y = y - 1;
+// console.log(y);
+
+//comparison operators
+// const bolaAge = 25;
+// const titiAge = 30;
+
+// console.log(bolaAge > titiAge);
+// console.log(bolaAge < titiAge);
+// console.log(bolaAge <= titiAge);
+// console.log(bolaAge >= titiAge);
+// console.log(bolaAge == titiAge);
+
+// console.log(typeof name);
+
+//javascript template literals
+// const firstName = "Ade";
+// const lastName = "Shola";
+// const age = 30;
+// const birthYear = 1993;
+// const occupation = "Student";
+// console.log(firstName + lastName);
+// console.log(`${firstName} ${lastName}`);
+
+// const description = `I am ${firstName} ${lastName}. I am ${age} years old. I was born in ${birthYear}. I am a ${occupation}.`;
+// console.log(description);
+
+//if else statements
+// const age = 18;
+// const isEligible = age >= 15;
+// if (age >= 15) {
+//   console.log("you can apply for admission");
+// } else {
+//   console.log("please wait for more year to apply for admission");
+// }
+
+//write a code that analyzes the performances of students in the department of Software Engineering. The total marks for Javascript is 100marks, the pass mark is 50marks, the excellent mark is 80marks. Prompt for their mark and tell them their results.
+
+// const totalMark = 100;
+// const passMark = 50;
+// const excellentMark = 80;
+
+// const individualMark = prompt("Enter your score");
+// if (individualMark == 80) {
+//   alert("Excellent, you passed the course with excellent result");
+// } else if (individualMark == 50) {
+//   alert(" Awesome, you passed the course");
+// } else if (individualMark < 50) {
+//   alert("Sorry, you failed this course, try more next time");
+// }
+
+//assignment
+//Mark and John are trying to compare their BMI(body mass index) which is calculated using the formula  BMI = mass/h2(height * height).
+
+//challenge
+//1. store Mark's and John's mass and height in variables.
+//2. calculate both their BMIs using the formula.
+//3. write a code that check if Mark's BMI is greater than John's BMI.
+
+//TEST DATA
+//1. Marks mass 78kg, height is 1.69m tall
+//Johns mass 92kg, height is 1.95m tall
+
+//2. Marks mass 95kg, height is 1.88m tall
+//Johns mass 85kg, height is 1.76m tall
+
 //1. write a javascript function that reverse the below variable.
 //Test data: const number = 12345;
 
@@ -705,36 +802,36 @@ let value;
 
 //javascript events
 
-const button = document.querySelector("#button");
-const emailInput = document.querySelector(".email-input");
-const formContainer = document.querySelector(".form-container");
-const login = document.querySelector("#login");
+// const button = document.querySelector("#button");
+// const emailInput = document.querySelector(".email-input");
+// const formContainer = document.querySelector(".form-container");
+// const login = document.querySelector("#login");
 
-emailInput.addEventListener("keydown", emailChange);
+// emailInput.addEventListener("keydown", emailChange);
 
-function emailChange(e) {
-  console.log(e.target.value);
-}
+// function emailChange(e) {
+//   console.log(e.target.value);
+// }
 
-button.addEventListener("click", (e) => {
-  e.preventDefault();
-  let value = e;
-  console.log(value);
-  // console.log("Hello World!");
-  // alert("Welcome back");
-  emailInput.style.backgroundColor = "red";
-  formContainer.style.backgroundColor = "brown";
-});
-button.addEventListener("mouseover", (e) => {
-  e.preventDefault();
-  // console.log("Hello World!");
-  // alert("Welcome back");
-  // emailInput.style.backgroundColor = "red";
-  // formContainer.style.backgroundColor = "brown";
+// button.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   let value = e;
+//   console.log(value);
+//   // console.log("Hello World!");
+//   // alert("Welcome back");
+//   emailInput.style.backgroundColor = "red";
+//   formContainer.style.backgroundColor = "brown";
+// });
+// button.addEventListener("mouseover", (e) => {
+//   e.preventDefault();
+//   // console.log("Hello World!");
+//   // alert("Welcome back");
+//   // emailInput.style.backgroundColor = "red";
+//   // formContainer.style.backgroundColor = "brown";
 
-  // formContainer.innerHTML = "<h1>Register</h1>";
-  login.innerHTML = "<h1>Login</h1>";
-  login.style.display = "block";
-  login.style.fontSize = "15px";
-  login.style.color = "blueviolet";
-});
+//   // formContainer.innerHTML = "<h1>Register</h1>";
+//   login.innerHTML = "<h1>Login</h1>";
+//   login.style.display = "block";
+//   login.style.fontSize = "15px";
+//   login.style.color = "blueviolet";
+// });
