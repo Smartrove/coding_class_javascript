@@ -98,6 +98,45 @@ y--; // y = y - 1;
 //1. write a javascript function that reverse the below variable.
 //Test data: const number = 12345;
 
+//solution
+// const marksMass = 78;
+// const johnsMass = 92;
+// const marksHeight = 1.69;
+// const johnsHeight = 1.95;
+// const marksMassTwo = 95;
+// const johnsMassTwo = 85;
+// const marksHeightTwo = 1.88;
+// const johnsHeightTwo = 1.76;
+
+// const marksBMI = 78 / (1.69 * 1.69);
+// // console.log(marksBMI);  // 27.309968138370508
+
+// const johnsBMI = 92 / (1.95 * 1.95);
+// // console.log(johnsBMI); 24.194608809993426
+
+// if (marksBMI > johnsBMI) {
+//   console.log("Marks BMI is greater");
+// } else {
+//   console.log("Johns BMI is greater");
+// }
+
+// truthy and falsy values
+//zero, empty string, undefined, null, NaN;
+// const zero = 0;
+// if (zero) {
+//   console.log("Hello world");
+// } else {
+//   console.log("this is  a falsy value");
+// }
+
+// const businessName = "";
+// console.log(businessName);
+// if (businessName) {
+//   console.log("This is a good business name");
+// } else {
+//   console.log("you need to register your brand");
+// }
+
 // function numberReversed() {
 //   const number = 12345;
 //   //   console.log(typeof number);
