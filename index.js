@@ -16,20 +16,20 @@
 // console.log(firstName + " " + lastName);
 
 //assignment operators
-let y = 5;
-y += 10; // y = y + 10;
+// let y = 5;
+// y += 10; // y = y + 10;
 // console.log(y);
 
-y *= 10; // y = y * 10;
+// y *= 10; // y = y * 10;
 // console.log(y);
 
-y -= 10; // y = y - 10;
+// y -= 10; // y = y - 10;
 // console.log(y);
 
-y++; // y = y + 1;
+// y++; // y = y + 1;
 // console.log(y);
 
-y--; // y = y - 1;
+// y--; // y = y - 1;
 // console.log(y);
 
 //comparison operators
@@ -135,6 +135,71 @@ y--; // y = y - 1;
 //   console.log("This is a good business name");
 // } else {
 //   console.log("you need to register your brand");
+// }
+
+//type conversion and coercion
+// const dateOfBirth = "1998";
+// console.log(typeof dateOfBirth);
+// const dateOfBirthNumber = Number(dateOfBirth);
+// console.log(typeof dateOfBirthNumber, dateOfBirthNumber);
+
+// const number = 45;
+// console.log(typeof number, number);
+// const numberString = String(number);
+// console.log(typeof numberString, numberString);
+
+//exercise
+//1. convert the data types to string
+// 60, 80, 89, 67.
+
+//2. convert the data types to number
+//'shola', 'tade', "soji"
+
+//type coercion
+// const age = 23;
+// const desc = "I am";
+// const ageYear = "years old";
+// console.log(desc + " " + age + " " + ageYear);
+
+// const x = "25";
+// const y = 5;
+// const z = x + y;
+// console.log(z);
+
+//1. let m = '1' + 1;
+// 2. m--;
+//3. let p = 2 + 3 + 4 + "5"
+//4. let n = "10" - "4" - "3" - 2 + '15'
+
+//switch statement
+// const age = 5;
+
+// switch (age) {
+//   case 35:
+//     console.log("You are now an adult");
+//     break;
+
+//   case 56:
+//     console.log("You are a grandpa");
+//     break;
+
+//   default:
+//     console.log("Grow up dear");
+// }
+
+const fruitPlan = "monday";
+// switch (fruitPlan) {
+//   case "monday":
+//     console.log("I will eat apple");
+//     break;
+//   case "tuesday":
+//     console.log("I will eat banana");
+//     break;
+//   case "wednesday":
+//     console.log("I will eat pineapple");
+//     break;
+//   default:
+//     console.log("I will drink water");
 // }
 
 // function numberReversed() {
@@ -374,7 +439,7 @@ y--; // y = y - 1;
 // const getArrayFunc = () => {
 //   for (let i = 0; i < years.length; i++) {
 //     // console.log(i);
-//     // console.log(years[i]);
+//     // console.log(years[i] );
 //     ages.push(2037 - years[i]);
 //   }
 //   console.log({ ages });
@@ -382,10 +447,30 @@ y--; // y = y - 1;
 
 // getArrayFunc();
 
+//exercise
+//using javascript function, loop through the values of this array and multiply it by 2 and push it into a new array.
+
+// const evenNumber = [24, 44, 68, 96, 32, 10];
+// const doubledEvenNumber = [];
+
+// const getDoubledEvenNumber = () => {
+//   for (let i = 0; i < evenNumber.length; i++) {
+//     const element = evenNumber[i];
+//     //   console.log(element);
+//     doubledEvenNumber.push(element * 2);
+//   }
+//   console.log(doubledEvenNumber);
+// };
+
+// getDoubledEvenNumber();
+
 // //Using the for each loop
 // const _loopNumber = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 // const _loop = [];
-// _loopNumber.forEach((number) => _loop.push(50 - number));
+// _loopNumber.forEach(function (number) {
+//   //   console.log(number);
+//   _loop.push(50 - number);
+// });
 
 // console.log({ _loop });
 
@@ -402,7 +487,8 @@ y--; // y = y - 1;
 
 // console.log(person);
 // console.log(person.age);
-// console.log(person["age"]);
+// console.log(person["firstName"]);
+// console.log(person.firstName, person.lastName);
 // console.log(person.firstName);
 // console.log(person.friends);
 
@@ -410,6 +496,14 @@ y--; // y = y - 1;
 // person["twitter"] = "http://twitter.com/person";
 // console.log(person);
 
+// const person = {
+//   firstName: "John",
+//   lastName: "Doe",
+//   age: 30,
+//   hobbies: ["coding", "music", "reading"],
+//   job: "student",
+//   friends: ["Smith", "Steven", "Gary"],
+// };
 //use the variable above to output this statement
 //John is a 30years old student. John has 3 friends. John's best friend is Smith. John's hobbies are coding, music and reading.
 
@@ -429,9 +523,8 @@ y--; // y = y - 1;
 //   job: "student",
 //   friends: ["Smith", "Steven", "Gary"],
 //   calcLoan: function () {
-//     // console.log(this);
+//     console.log(this);
 //     return `${this.firstName} is a ${this.age}years old ${this.job}. ${this.firstName} has ${this.friends.length} friends. ${this.firstName}'s best friend is ${this.friends[0]}. ${this.firstName}'s hobbies are ${this.hobbies}.`;
-//     // );
 //   },
 // };
 
@@ -517,8 +610,8 @@ y--; // y = y - 1;
 //   baked: "Baked Rice",
 //   chicken: "Chicken Rice",
 // };
-// console.log(dailyMeals);
-// //Using the for-of-loop
+// // console.log(dailyMeals);
+// // //Using the for-of-loop
 
 // for (const key of Object.keys(dailyMeals)) {
 //   const result = key;
@@ -544,9 +637,9 @@ y--; // y = y - 1;
 // }
 
 //using the for-in loop
-// for (food in dailyMeals) {
-//   console.log(food);
-//   console.log(dailyMeals[food]);
+// for (key in dailyMeals) {
+//   // console.log(key);
+//   console.log(dailyMeals[key]);
 // } // get the object keys
 
 //using the for-in-loop to get the values from an object
@@ -561,8 +654,8 @@ y--; // y = y - 1;
 //   city: "New York",
 // };
 
-// let myString = JSON.stringify(person);
-// console.log(typeof myString);
+// let personString = JSON.stringify(person);
+// console.log(typeof personString);
 
 // const date = new Date();
 // console.log(date);
@@ -606,7 +699,7 @@ y--; // y = y - 1;
 //   lastName: "Doe",
 //   language: "en",
 //   get lang() {
-//     return this.language;
+//     return this.firstName;
 //   },
 // };
 
@@ -714,7 +807,7 @@ y--; // y = y - 1;
 //     this.brand = brand;
 //   }
 //   present() {
-//     return `I have a ${this.brand}`;
+//     return `I have a ${this.brand} car`;
 //   }
 // }
 
@@ -733,7 +826,7 @@ y--; // y = y - 1;
 
 //javascript DOM
 
-let value;
+// let value;
 
 //to get the document properties
 // value = document;
@@ -749,6 +842,7 @@ let value;
 
 // //accessing the head only
 // value = document.head;
+// value = document.body;
 
 // //accessing the body only
 
@@ -762,7 +856,7 @@ let value;
 
 // //getting the document elements one by one
 // value = document.forms;
-// value = document.forms[0];
+// // value = document.forms[0];
 // value = document.forms[0].action;
 // value = document.forms[0].method;
 // value = document.links;
@@ -771,7 +865,7 @@ let value;
 
 // value = document.scripts;
 // value = document.scripts[0].getAttribute("src");
-// // console.log(value);
+// console.log(value);
 
 // //DOM Selectors
 // //using document.getElementById
@@ -874,3 +968,24 @@ let value;
 //   login.style.fontSize = "15px";
 //   login.style.color = "blueviolet";
 // });
+
+
+// const day = {
+// monday:{
+//     open: 2,
+//     close: 3
+// },
+// tuesday:{
+//     open: 4,
+//     close: 5 
+// }
+// }
+
+// const {monday, tuesday} = day;
+// console.log(monday, tuesday)
+
+// console.log(window)
+
+
+
+
