@@ -297,12 +297,45 @@
 // name[2] = "Olalekan";
 // console.log(name);
 
-const name = ["Bola", "Ade", "Shola"];
 // name[1] = "Bisi";
 // console.log(typeof name, name);
 
 // const nameString = name.toString();
 // console.log(name.length, typeof nameString);
 
-const lastElement = name[name.length - 1];
-console.log(lastElement);
+// const lastElement = name[name.length - 1];
+// console.log(lastElement);
+
+// const name = ["Bola", "Ade", "Shola"];
+
+// name.shift()
+// name.push('Titi')
+// name.unshift('Kareem')
+
+// name[0] = "Ola"
+// // let newName = name.pop()
+
+// // console.log(newName)
+// console.log(name)
+
+// const a = '1'
+// const b = 2
+
+// const c = a.concat(b)
+// console.log(c)
+
+// const fruit = ['Banana', "Orange", "Pineapple"]
+
+// const a = fruit.concat(name)
+// console.log(a)
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2, 2, "Lemon", "Kiwi");
+
+// console.log(fruits)
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(3);
+console.log(citrus)
+
