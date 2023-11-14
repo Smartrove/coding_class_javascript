@@ -335,7 +335,72 @@
 
 // console.log(fruits)
 
-const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-const citrus = fruits.slice(3);
-console.log(citrus)
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(3);
+// console.log(citrus)
+
+//sorting method
+// const number = [2,5, 6, 9, 1, 4, 8, 2,2, 5, 6, 16, 36]
+// const sortedNumber = number.sort()
+// console.log(sortedNumber)
+
+//javascript function
+// function sort(){
+//    const a = 2;
+//    const b = 3;
+//    if(a === b){
+//     console.log('they are equal')
+//    } else{
+//     return
+//    }
+
+//    console.log('Wow!!')
+// }
+
+// sort()
+
+//arrow function
+// const sort = (a, b) => {
+//     a = 2;
+//     b= 3;
+//     console.log(a * b) ;
+// }
+
+
+// sort()
+
+// function toCelsius(f) {
+//     return (5/9) * (f-32);
+//   }
+
+//   let value = toCelsius(70);
+//   console.log(value);
+
+// const number = [2,5, 6, 9, 1, 4, 8, 2,2, 5, 6, 16, 36]
+
+// const sortedNumber = number.sort(function(a,b){
+//  return a - b;
+// })
+
+// console.log(sortedNumber)
+
+//global variable
+//local variable
+
+const a = 5;
+function number(){
+    const b = 6;
+console.log(a);
+}
+
+console.log(b)
+
+number()
+
+
+
+
+
+
+
 
