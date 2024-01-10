@@ -329,7 +329,6 @@
 // const a = fruit.concat(name)
 // console.log(a)
 
-
 // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 // fruits.splice(2, 2, "Lemon", "Kiwi");
 
@@ -366,7 +365,6 @@
 //     console.log(a * b) ;
 // }
 
-
 // sort()
 
 // function toCelsius(f) {
@@ -387,20 +385,113 @@
 //global variable
 //local variable
 
-const a = 5;
-function number(){
-    const b = 6;
-console.log(a);
-}
+// const a = 5;
+// function number(){
+//     const b = 6;
+// console.log(a);
+// }
+// number()
 
-console.log(b)
+// const number = [1, 2, 3, 4, 5, 6, 7, 8];
+// for (let i = 0; i < number.length; i++) {
+//   console.log(number[i] * 2);
+// }
 
-number()
+//1. given an array with elements, return  the  largest element in the array using javascript function;
 
+//Test data: const arrayNumber = [20, 21, 18, 15, 10, 9, 8, 7, 45]
 
+// function getLargestElement() {
+//   const arrayNumber = [20, 21, 18, 15, 10, 9, 8, 7, 45];
+//   let largestElement = arrayNumber[0];
+//   for (let i = 0; i < arrayNumber.length; i++) {
+//     if (arrayNumber[i] > largestElement) {
+//       largestElement = arrayNumber[i];
+//     }
+//   }
+//   console.log(largestElement);
+// }
 
+// getLargestElement();
 
+// function largestElement() {
+//   const arrayNumber = [20, 21, 18, 15, 10, 9, 8, 7, 45];
+//   let largestNumber = arrayNumber[0];
+//   for (let i = 0; i < arrayNumber.length; i++) {
+//     if (arrayNumber[i] > largestNumber) {
+//       largestNumber = arrayNumber[i];
+//     }
+//   }
+//   console.log(largestNumber);
+// }
 
+// largestElement();
 
+//object in javascript
 
+// const person = {
+//   firstName: "John",
+//   lastName: "Smith",
+//   age: 34,
+//   country: "United States",
+// };
 
+// console.log(typeof person);
+
+//dot notation
+
+// console.log(person.firstName);
+// console.log(person.lastName);
+
+//bracket notation
+// console.log(person["age"]);
+
+//looping in array
+
+// const arrayNumber = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < arrayNumber.length; i++) {
+//   console.log(arrayNumber[i] * 4);
+// }
+
+//looping in object with the while loop
+// let rep = 1;
+
+// while (rep <= 10) {
+//   console.log(rep);
+
+//   rep++;
+// }
+
+// let i = 0;
+// do {
+//   console.log(i);
+
+//   i++;
+// } while (i <= 10);
+
+//object this method
+// const person = {
+//   firstName: "John",
+//   lastName: "Smith",
+//   age: 34,
+//   country: "United States",
+//   getBirthYear: function () {
+//     console.log(this.firstName);
+//     return 2024 - this.age;
+//   },
+// };
+
+// // let x;
+// // x = person.getBirthYear();
+// // console.log(x);
+
+// for (let i in person) {
+//   console.log(person[i]);
+// }
+
+//javascript hoisting
+
+x = 5;
+console.log(x);
+var x;
