@@ -1,3 +1,5 @@
+"use strict";
+
 // console.log("Hello World");
 // alert("Hello Javascript");
 
@@ -492,6 +494,42 @@
 
 //javascript hoisting
 
-x = 5;
-console.log(x);
-var x;
+// x = 5;
+// console.log(x);
+// var x;
+
+//superset is called typescript
+
+//destructuring in javascript array.
+// const arr = [2, 3, 4, 5];
+// // console.log(arr[0]);
+// // console.log(arr[1]);
+
+// //using destructuring
+
+// const [a, b, c, d] = arr;
+// console.log(a);
+
+//destructuring in javascript object
+
+// const person = {
+//   firstName: "John",
+//   lastName: "Smith",
+//   age: 34,
+//   country: "United States",
+//   getBirthYear: function () {
+//     console.log(this.firstName);
+//     return 2024 - this.age;
+//   },
+// };
+
+// const { firstName, lastName, age, country } = person;
+// console.log(country);
+
+//the spread operator
+const arr = [7, 8, 9];
+
+// const oldArrayMethod = [1, 2, arr[0], arr[1], arr[2]];
+const oldArrayMethod = [1, 2, ...arr];
+// console.log(oldArrayMethod);
+console.log(...oldArrayMethod);
