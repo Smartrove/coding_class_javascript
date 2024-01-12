@@ -527,9 +527,27 @@
 // console.log(country);
 
 //the spread operator
-const arr = [7, 8, 9];
+// const arr = [7, 8, 9];
 
-// const oldArrayMethod = [1, 2, arr[0], arr[1], arr[2]];
-const oldArrayMethod = [1, 2, ...arr];
-// console.log(oldArrayMethod);
-console.log(...oldArrayMethod);
+// // const oldArrayMethod = [1, 2, arr[0], arr[1], arr[2]];
+// const oldArrayMethod = [1, 2, ...arr];
+// // console.log(oldArrayMethod);
+// console.log(...oldArrayMethod);
+
+///browser window object
+// console.log(window);
+// window.alert("Hello Javascript");
+
+let value;
+value = window.outerHeight;
+value = window.outerWidth;
+value = window.location;
+value = window.location.pathname;
+
+// window.location.reload();
+value = window.history;
+value = window.navigator;
+value = window.navigator.language;
+value = window.navigator.geolocation;
+value = window.document;
+console.log(value);
