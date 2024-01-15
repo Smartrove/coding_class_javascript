@@ -539,15 +539,37 @@
 // window.alert("Hello Javascript");
 
 let value;
-value = window.outerHeight;
-value = window.outerWidth;
-value = window.location;
-value = window.location.pathname;
+// value = window.outerHeight;
+// value = window.outerWidth;
+// value = window.location;
+// value = window.location.pathname;
 
-// window.location.reload();
-value = window.history;
-value = window.navigator;
-value = window.navigator.language;
-value = window.navigator.geolocation;
-value = window.document;
-console.log(value);
+// // window.location.reload();
+// value = window.history;
+// value = window.navigator;
+// value = window.navigator.language;
+// value = window.navigator.geolocation;
+// value = window.document;
+
+//traversing the DOM
+// value = document;
+// value = document.all;
+// value = document.forms[0].id;
+// value = document.images;
+// // console.log(value[0]);
+// // console.log(value[1]);
+// // console.log(value[2]);
+// // console.log(value.length)
+// console.log(value);
+
+// console.log(document.getElementById("form").className);
+
+// document.getElementById("form").style.backgroundColor = "#fff";
+// document.getElementById("form").style.color = "blue";
+// document.getElementById("email").textContent = "Uhm Uhm";
+
+// value = document.querySelector("#form");
+document.querySelector("#form").style.color = "blue";
+document.querySelector(".email-input").style.border = "3px solid red";
+
+// console.log(value);
