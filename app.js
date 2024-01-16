@@ -572,4 +572,10 @@ let value;
 document.querySelector("#form").style.color = "blue";
 document.querySelector(".email-input").style.border = "3px solid red";
 
+const heading = document.getElementById("login");
+
 // console.log(value);
+document.querySelector("#login").addEventListener("click", function () {
+  heading.innerHTML = "Login";
+});
+// function changeHeading() {}
