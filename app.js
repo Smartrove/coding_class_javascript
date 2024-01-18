@@ -569,13 +569,20 @@ let value;
 // document.getElementById("email").textContent = "Uhm Uhm";
 
 // value = document.querySelector("#form");
-document.querySelector("#form").style.color = "blue";
-document.querySelector(".email-input").style.border = "3px solid red";
+// document.querySelector("#form").style.color = "blue";
+// document.querySelector(".email-input").style.border = "3px solid red";
 
-const heading = document.getElementById("login");
+// const heading = document.getElementById("login");
 
-// console.log(value);
-document.querySelector("#login").addEventListener("click", function () {
-  heading.innerHTML = "Login";
-});
-// function changeHeading() {}
+// // console.log(value);
+// document.querySelector("#login").addEventListener("click", function () {
+//   heading.innerHTML = "Login";
+// });
+
+// const input = document.getElementsByClassName("input");
+// // console.log(input[0]);
+// input[0].style.backgroundColor = "gray";
+// input[1].style.backgroundColor = "green";
+
+const label = document.getElementsByTagName("label");
+label[0].style.color = "green";

@@ -23,13 +23,20 @@
     <div class="container">
       <h1 style="margin-top: 10px" id="login">Hello world!!!</h1>
       <div class="form-main-container">
-        <form id="form" class="form-container" action="/index.php" method="get">
+        <form id="form" class="form-container" action="" method="get">
           <label id="name" for="name">Name:</label><br />
-          <input type="text" name="name" /><br />
+          <input type="text" name="name" class="input" required /><br />
           <label id="email" for="Email">Email:</label><br />
-          <input type="email" name="email" class="email-input" /><br />
+          <input type="email" name="email" class="input" /><br />
           <label for="Password">Password:</label><br />
-          <input class="password-input" type="password" name="password" /><br />
+          <input
+            class="input"
+            type="password"
+            name="password"
+            minlength="6"
+            maxlength="9"
+            pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W]).{6,20})"
+          /><br />
           <button type="submit" id="button">submit</button>
         </form>
       </div>
