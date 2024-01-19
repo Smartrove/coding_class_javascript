@@ -584,5 +584,50 @@ let value;
 // input[0].style.backgroundColor = "gray";
 // input[1].style.backgroundColor = "green";
 
-const label = document.getElementsByTagName("label");
-label[0].style.color = "green";
+// const label = document.getElementsByTagName("label");
+// label[0].style.color = "green";
+
+//javascript validation
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const form = document.getElementById("form");
+const nameLabel = document.querySelector(".name");
+const emailLabel = document.querySelector(".email");
+const passwordLabel = document.querySelector(".password");
+
+let formValid;
+function validateForm(e) {
+  console.log("first");
+  e.preventDefault();
+  formValid = form.checkValidity();
+  if (!formValid) {
+    name.style.border = "1px solid red";
+    email.style.border = "1px solid red";
+    password.style.border = "1px solid red";
+  }
+
+  if (name.value === "") {
+    nameLabel.innerHTML = "Please enter a name";
+    name.style.border = "3px solid red";
+  } else {
+    name.style.border = "3px solid green";
+    nameLabel.style.color = "green";
+  }
+
+  if (email.value === "" || !email.value.includes("@")) {
+    emailLabel.innerHTML = "Please enter valid email address";
+    email.style.border = "3px solid red";
+  } else {
+    email.style.border = "3px solid green";
+    emailLabel.style.color = "green";
+  }
+
+  if (password.value === "" || !password.value.length === 6) {
+    passwordLabel.innerHTML = "Please enter a strong password";
+    password.style.border = "3px solid red";
+  } else {
+    password.style.border = "3px solid green";
+    passwordLabel.style.color = "green";
+  }
+}
