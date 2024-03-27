@@ -3,27 +3,27 @@
 //there are three key words used to declare a variable in js.
 //let, var, const;
 
-let x = 5;
 // let x = 5;
-var y = 5;
-var y = 6;
+// let x = 5;
+// var y = 5;
+// var y = 6;
 
-const z = 5;
+// const z = 5;
 // console.log(x, y);
 
 // 1. make use camelcase or snakecase for variable declarations
 
 //camel case
-const hisName = "Shola";
-const countryName = "Nigeria";
+// const hisName = "Shola";
+// const countryName = "Nigeria";
 
-//snake case
-const his_name = "Shola";
-const country_name = "Nigeria";
+// //snake case
+// const his_name = "Shola";
+// const country_name = "Nigeria";
 
-//some other ways of declaring variables
-const _country = "India";
-const $country = "United States";
+// //some other ways of declaring variables
+// const _country = "India";
+// const $country = "United States";
 
 //don't of declaration
 
@@ -100,3 +100,60 @@ const $country = "United States";
 // const firstName = "John";
 // const stringBoolean = Boolean(firstName);
 // console.log(typeof stringBoolean);
+
+//type coercion
+// const x = 1;
+// const y = "1";
+// const z = x + y;
+// console.log(z);
+
+// //concatenation
+// const firstName = "John";
+// const secondName = "Smith";
+// console.log(firstName + secondName);
+
+// let p = 2 + 3 + 4 + "5";
+// console.log(p);
+
+//basic operators in javascript
+//Assignment Operators
+//Arithmetic Operators
+//Comparison Operators
+//Logical Operators
+//Ternary Operators
+
+//assignment operator
+// var x = 2;
+// x += 1; // x = x + 1
+// x -= 1; // x = x - 1
+// x /= 1; // x = x / 1
+// x *= 1; // x = x * 1
+// x %= 1; // x = x % 1
+
+// //arithmetic operators
+// var x = 1;
+// var y = 2;
+// var z = x + y;
+// var z = x - y;
+// var z = x * y;
+// var z = x / y;
+// var z = x % y;
+
+// x++; // x = x + 1;
+// x--; // x = x - 1
+// x ** 2;
+// console.log(x);
+
+//comparison operators
+
+var x = 2;
+var y = "2";
+console.log(x > y);
+console.log(x >= y);
+console.log(x < y);
+console.log(x <= y);
+console.log(x == y);
+
+//there are two equals to in javascript
+//the equals  to that only checks for value;
+//the equals  to that checks for value and data types;
